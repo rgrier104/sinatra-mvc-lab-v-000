@@ -14,7 +14,7 @@ class PigLatinizer
       new_word = word + "way"
     else
       first3_array.map do |letter|
-        if ('aeoui').include?(letter)
+        if !('aeoui').include?(letter)
           sec1_array << letter
         end
       end
