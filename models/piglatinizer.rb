@@ -20,7 +20,7 @@ class PigLatinizer
       end
       new_word = sec1_array
     end
-    
+
     new_word
   end
 
