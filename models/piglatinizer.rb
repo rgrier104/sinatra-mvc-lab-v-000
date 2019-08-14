@@ -10,7 +10,7 @@ class PigLatinizer
     first3_array = word[0,3].split('')
     sec1_array = []
 
-    if word.scan(/[aeoui]/).count == 0
+    if word[0].scan(/[aeoui]/).count == 0
       new_word = "vowel"
     else
       first3_array.map do |letter|
@@ -20,6 +20,7 @@ class PigLatinizer
       end
       new_word = sec1_array
     end
+    
     new_word
   end
 
