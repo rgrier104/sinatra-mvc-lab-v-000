@@ -5,7 +5,7 @@ class PigLatinizer
     @text = text
   end
 
-  def piglatinize_word(word)
+  def piglatinize(word)
     letter_array = word.split('')
     first3_array = word[0,3].split('')
     sec1_array = []
