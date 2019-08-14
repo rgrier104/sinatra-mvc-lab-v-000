@@ -12,7 +12,7 @@ class PigLatinizer
 
     if ('aeiou').include?(letter_array[0])
       new_word = word + "way"
-    elsif ('aeoui').include?(letter_array[1])
+    elsif letter_array.length > 1 and ('aeoui').include?(letter_array[1])
       new_word = word[1,word.length-1] + word[0] + "ay"
     elsif ('aeoui').include?(letter_array[2])
       new_word = word[2,word.length-1] + word[0,2] + "ay"
