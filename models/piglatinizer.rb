@@ -11,7 +11,7 @@ class PigLatinizer
     sec1_array = []
 
     if word.scan(/[aeoui]/).count == 0
-      new_word = word.slice(1,word.length-1) + word[0] + "ay"
+      new_word = "vowel"
     else
       first3_array.map do |letter|
         if letter.include?('aeoui')
