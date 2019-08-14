@@ -14,7 +14,7 @@ class PigLatinizer
       new_word = word.slice(1,word.length-1) + word[0] + "ay"
     else
       letter_array.map do |letter|
-        if letter not in 'aeoui'
+        if letter.include?('aeoui')
           sec1_array << letter
         end
       end
