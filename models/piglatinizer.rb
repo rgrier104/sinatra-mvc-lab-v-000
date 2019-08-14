@@ -18,7 +18,7 @@ class PigLatinizer
           sec1_array << letter
         end
       end
-      new_word = word[sec1_array.length-1] + sec1_array.join('') + "ay"
+      new_word = word[sec1_array.length, word.length-sec1_array.length] + sec1_array.join('') + "ay"
     end
     new_word
   end
