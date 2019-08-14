@@ -13,7 +13,7 @@ class PigLatinizer
     if word.scan(/[aeoui]/).count == 0
       new_word = word.slice(1,word.length-1) + word[0] + "ay"
     else
-      letter_array.map do |letter|
+      first3_array.map do |letter|
         if letter.include?('aeoui')
           sec1_array << letter
         end
