@@ -11,7 +11,7 @@ class PigLatinizer
     sec1_array = []
 
     if ('aeiou').include?(letter_array[0])
-      new_word = "vowel"
+      new_word = word + "way"
     else
       first3_array.map do |letter|
         if letter.include?('aeoui')
