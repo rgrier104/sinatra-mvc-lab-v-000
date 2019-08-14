@@ -14,8 +14,6 @@ class PigLatinizer
       new_word = word + "way"
     elsif ('aeoui').include?(letter_array[1])
       new_word = word[1,word.length-1] + word[0] = "ay"
-      end
-      new_word = sec1_array
     end
 
     new_word
