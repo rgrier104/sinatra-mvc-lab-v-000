@@ -16,6 +16,8 @@ class PigLatinizer
       new_word = word[1,word.length-1] + word[0] + "ay"
     elsif ('aeoui').include?(letter_array[2])
       new_word = word[2,word.length-1] + word[0,2] + "ay"
+    elsif ('aeoui').include?(letter_array[3])
+      new_word = word[3,word.length-1] + word[0,3] + "ay"
     end
 
     new_word
