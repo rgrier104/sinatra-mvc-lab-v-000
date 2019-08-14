@@ -11,17 +11,17 @@ class PigLatinizer
     sec1_array = []
 
     if word.scan(/[aeoui]/).count == 0
-      new_word = slice(1,word.length-1) + word[0] + "ay"
+      new_word = word.slice(1,word.length-1) + word[0] + "ay"
     else
       letter_array.map do |letter|
         if letter not in 'aeoui'
           sec1_array << letter
         end
       end
+      new_word = word[sec1_array.length..-1] + sec1_array.join('') + "ay"
     end
+    new_word
   end
-
-
 
   def piglatin(text)
     word_array = text.split(/\W+/)
