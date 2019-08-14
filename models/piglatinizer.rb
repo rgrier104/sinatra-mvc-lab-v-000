@@ -11,7 +11,7 @@ class PigLatinizer
     second_letter = word[1].downcase
     third_letter = word[2].downcase
     if word.scan(/[aeoui]/).count == 0
-      
+
 
   def piglatin(text)
     word_array = text.split(/\W+/)
