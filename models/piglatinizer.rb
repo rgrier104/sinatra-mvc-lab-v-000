@@ -10,9 +10,7 @@ class PigLatinizer
     pig_array = word_array.map do |word|
       pitlatinize_word(word)
     end
-
-
-
-
+    pig_array.join(" ")
+  end
 
 end
