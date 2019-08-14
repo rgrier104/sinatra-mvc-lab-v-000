@@ -26,7 +26,7 @@ class PigLatinizer
   def piglatin
     word_array = text.split(/\W+/)
     pig_array = word_array.map do |word|
-      pitlatinize_word(word)
+      piglatinize_word(word)
     end
     pig_array.join(" ")
   end
