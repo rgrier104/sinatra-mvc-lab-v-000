@@ -10,7 +10,7 @@ class PigLatinizer
     first3_array = word[0,3].split('')
     sec1_array = []
 
-    if ('aeiou').include?(letter_array[0])
+    if ('aeiouAEIOU').include?(letter_array[0])
       new_word = word + "way"
     elsif letter_array.length > 1 and ('aeoui').include?(letter_array[1])
       new_word = word[1,word.length-1] + word[0] + "ay"
